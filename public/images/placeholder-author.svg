@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#g1)"/>
+  <circle cx="150" cy="110" r="45" fill="rgba(255,255,255,0.9)"/>
+  <path d="M 150 65 A 45 45 0 0 1 150 155 A 45 45 0 0 1 150 65 Z" fill="rgba(255,255,255,0.5)" opacity="0.3"/>
+  <ellipse cx="150" cy="250" rx="90" ry="60" fill="rgba(255,255,255,0.9)"/>
+  <text x="150" y="130" font-family="sans-serif" font-size="52" font-weight="bold" fill="#0d9488" text-anchor="middle" dominant-baseline="middle">📚</text>
+</svg>
