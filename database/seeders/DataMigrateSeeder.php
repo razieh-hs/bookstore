@@ -3247,19 +3247,16 @@ $authors = array_merge($authors, $iranianAuthors);
                 $validAuthors[] = $a;
             }
         }
-
-      $validBooks = [];
+         $validBooks = [];
 foreach ($books as $b) {
     $authorIsValid = collect($validAuthors)->contains('id', $b['author']);
     if (!$authorIsValid) continue;
 
-    foreach (['jpg', 'svg', 'png', 'jpeg'] as $ext) {
-        if (File::exists(public_path("images/books/{$b['id']}.{$ext}"))) {
-            $b['cover'] = "/images/books/{$b['id']}.{$ext}";
-            $validBooks[] = $b;
-            break;
-        }
-    }
+    if (File::exists(public_path("images/books/{$b['id']}.jpg"))) {
+        $b['cover'] = "/images/books/{$b['id']}.jpg";
+        $validBooks[] = $b;
+     }
+
 }
 
         foreach ($validAuthors as $a) {
